@@ -1,0 +1,23 @@
+{
+  "name": "jdevab.com",
+  "description": "Homepage",
+  "main": "....",
+  "version": "0.0.1",
+  "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
+  "bucketful": {
+    "bucket": "www.jdevab.com",
+    "exclude": ["index.html"],
+    "opra": {
+      "inline": true,
+      "compress": true
+    }
+  },
+  "devDependencies": {
+    "opra": "0.12.1",
+    "bucketful": "0.7.3"
+  },
+  "scripts": {
+    "start": "opra -r public",
+    "deploy": "bucketful"
+  }
+}
